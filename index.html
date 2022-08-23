@@ -5,20 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landin Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,400;1,900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400&display=swap"rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="body">
-    <header class="header">
-      <img class="logo" src="./img/logo-CM.png" alt="" />
-      <div class="headEnlaces">
-        <a class="enlace" href="#">inicio</a>
-        <a class="enlace" href="#">servicio</a>
-        <a class="enlace" href="#">clientes</a>
-        <a class="enlace" href="#">contactos</a>
+  <body>
+    <nav class="nav">
+      <img class="logo" src="./img/biblio.png" alt="imagen de logo" />
+      <ul class="enlaces-nav">
+        <li><a class="enlace" href="#">Inicio</a></li>
+        <li><a class="enlace" href="#">Biblioteca</a></li>
+        <li><a class="enlace" href="#">Foro</a></li>
+        <li><a class="enlace" href="#">Contacto</a></li>
+      </ul>
+    </nav>
+    <header>
+      <div class="hero">
+      <div class="eslogan">
+        <h1>Entre lineas y autores</h1>
+        <p>"Somos un club de lectura donde leeremos un libro mensualmente y debatiremos sobre el en el foro. Sumate a esta comunidad con personas de todo el mundo"</p>
+        <div class="buttons">
+          <input class="enlace" type="button" value="Login">
+          <input class="enlace" type="button" value="Sing Up">
+        </div>
       </div>
-    </header>
+      <img class="img-hero" src="./img/Biblioteca.png" alt="imagen de Biblioteca">
+    </div>
+    <div class="des">
+      <div class="des-car">
+        <h3>Biblioteca</h3>
+        <img class="des-img" src="./img/biblioteca-logo.png" alt="imagen de biblioteca">
+        <p>Aquí encontraras reseñas sobre todas nuestras lecturas</p>
+      </div>
+      <div class="des-car">
+        <h3>Foros</h3>
+        <img class="des-img" src="./img/Foro.png" alt="imagen de foro">
+        <p>Aquí encontraras los foros correspondientes a las distintas lecturas</p>
+      </div>
+    </div>
+  </header>
   </body>
 </html>
