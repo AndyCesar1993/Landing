@@ -10,14 +10,9 @@
     rgba(174, 0, 204, 1) 53%,
     rgba(164, 55, 200, 1) 73%
   );
-  --backbutton: rgba(82, 64, 64, 0.59);
+  --backbutton: rgba(56, 20, 53, 0.59);
   --fontcolorwhite: rgb(231, 208, 208);
-  --backh1: linear-gradient(
-    128deg,
-    rgba(63, 11, 89, 0.9023984593837535) 30%,
-    rgba(162, 114, 187, 0.8463760504201681) 53%,
-    rgba(101, 7, 159, 0.9108018207282913) 73%
-  );
+  --backh1: linear-gradient(138deg, rgba(36,30,33,1) 36%, rgba(89,20,101,1) 68%);
   --backcard: radial-gradient(
     circle,
     rgba(177, 9, 153, 0.9023984593837535) 30%,
@@ -45,7 +40,7 @@ body {
   padding: 5px 10px;
   justify-content: space-between;
   align-items: center;
-  border: 2px solid gray;
+  border-bottom: 4px solid var(--backbutton);
   width: 100%;
   position: fixed;
   top: 0;
@@ -65,6 +60,7 @@ body {
   align-items: center;
   padding: 10px;
   border: 2px solid gray;
+  box-shadow: 4px 4px 4px rgb(60, 57, 57);
   width: 100px;
   height: 40px;
   border-radius: 15px;
@@ -97,15 +93,16 @@ header {
   display: flex;
   flex-direction: column;
   max-width: 300px;
-  gap: 70px;
+  gap: 50px;
 }
 .eslogan h1 {
   font-size: 50px;
   font-weight: 900;
   text-align: center;
-  /* background: var(--backh1);
+  background: var(--backh1);
   background-clip: content-box;
-  color: transparent; */
+  color: transparent;
+  -webkit-background-clip: text;
 }
 .eslogan p {
   font-size: 20px;
@@ -122,34 +119,122 @@ header {
   border-radius: 20px;
   box-shadow: 0 0 15px 15px violet;
 }
-.des {
+.des{
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  max-width: 700px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  gap: 15px;
+}
+.des h1{
+  font-size: 50px;
+  font-weight: 900;
+  text-align: center;
+  background: var(--backh1);
+  background-clip: content-box;
+  color: transparent;
+  -webkit-background-clip: text;
+
+}
+.cards {
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 200px;
-  margin: 100px;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin: 50px;
 }
-.des-car {
+.foros-cards {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  width: 300px;
-  height: 400px;
+  width: 320px;
+  height: 450px;
   background: var(--backcard);
   border: 3px solid black;
-  border-radius: 20px;
-  padding: 10px;
+  border-radius: 30px;
+  padding: 20px;
   color: var(--fontcolorwhite);
+  box-shadow: 4px 4px 4px rgb(60, 57, 57);
+}
+.foros-cards a{
+  display: flex;
+  margin-left: 60px;
+  color:black;
+  font-weight: lighter;
+}
+.foros-cards a:hover{
+  text-decoration: underline;
 }
 .des-img {
-  width: 250px;
+  width: 150px;
+  border-radius: 25px;
 }
-.des-car h3 {
+.foros-cards h3 {
   font-weight: 900;
-  font-size: 30px;
-}
-.des-car p {
   font-size: 17px;
+  font-weight: 600;
+}
+.foros-cards section {
+  display: flex;
+  width: 300px;
+  gap: 10px;
+  justify-content: center;
+}
+.foros-cards section div{
+  display: flex;
+  flex-direction: column;
+  height: 80px;
+  justify-content: space-between;
+
+}
+.foros-cards section div h3{
+  font-weight: 500;
+}
+.contacto{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+.contacto h1{
+  font-size: 50px;
+  font-weight: 900;
   text-align: center;
+  background: var(--backh1);
+  background-clip: content-box;
+  color: transparent;
+  -webkit-background-clip: text;
+}
+.contac-datos img{
+  width: 40px;
+}
+.contac-datos{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+}
+.contac-logos{
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.contac-logos img{
+  width: 40px;
+}
+footer{
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+  align-items: center;
+  border-top: 4px solid var(--backbutton);
+}
+footer img{
+  width: 50px;
 }
