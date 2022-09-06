@@ -1,0 +1,46 @@
+@media (max-width:530px) {
+    .menu-ul{
+        display: flex;
+    }
+    .nav input{
+        display: none;
+    }
+    .enlaces-nav{
+        display: none;
+        position: fixed;
+        flex-direction: column;
+        gap: 70px;
+        top: 60px;
+        height: 100vh;
+        width: 100%;
+        background: var(--backnav);
+        justify-content: center;
+        align-items: center;
+    }
+    .enlace{
+        width: 150px;
+        height: 60px;
+    }
+    #menu-toggle:checked + .enlaces-nav{
+        display: flex;
+    }
+    
+    
+    .nav{
+        justify-content: space-around;
+    }
+    .hero{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .des{
+        max-width: 500px;
+    }
+    .contac-datos{
+        flex-direction: column;
+    }
+    .contac-datos :last-child{
+        margin-left: 11px;
+    }
+    
+}
