@@ -202,6 +202,18 @@ header {
   gap: 15px;
   align-items: center;
 }
+.contac-datos section{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.menu-ul{
+  display: none;
+}
+.menu-ul label{
+  font-size: 40px;
+  cursor: pointer;
+}
 .contacto h1{
   font-size: 50px;
   font-weight: 900;

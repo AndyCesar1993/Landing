@@ -7,21 +7,21 @@
     <title>Landin Page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,400;1,900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,400;1,900&display=swap"rel="stylesheet"/>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400&display=swap"rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css" />
   </head>
   <body>
     <nav class="nav">
       <img class="logo" src="./img/biblio.png" alt="imagen de logo" />
+      <div class="menu-ul">
+      <label for="menu-toggle"><i class="bi bi-list"></i></label>
+      <input type="checkbox" id="menu-toggle" /> 
+      </div>
       <ul class="enlaces-nav">
         <li><a class="enlace" href="#">Inicio</a></li>
         <li><a class="enlace" href="#">Biblioteca</a></li>
@@ -34,7 +34,8 @@
         <div class="eslogan">
           <h1>Entre lineas y autores</h1>
           <p>
-            ¡Sumate a nosotros, para descubrir una nueva aventura todos los meses!
+            ¡Sumate a nosotros, para descubrir una nueva aventura todos los
+            meses!
           </p>
           <div class="buttons">
             <input class="enlace" type="button" value="Login" />
@@ -198,12 +199,18 @@
       <div class="contacto">
         <h1>Contacto</h1>
         <div class="contac-datos">
-          <img src="./img/icons/logo ubicacion.png" alt="lgo ubicacion" />
-          <p>Calle falsa 123</p>
-          <img src="./img/icons/logo mail.png" alt="logo mail" />
-          <p>mail@mail.com</p>
-          <img src="./img/icons/logo telefono.png" alt="logo telefono" />
-          <p>011 15-5632-4892</p>
+          <section>
+            <img src="./img/icons/logo ubicacion.png" alt="lgo ubicacion" />
+            <p>Calle falsa 123</p>
+          </section>
+          <section>
+            <img src="./img/icons/logo mail.png" alt="logo mail" />
+            <p>mail@mail.com</p>
+          </section>
+          <section>
+            <img src="./img/icons/logo telefono.png" alt="logo telefono" />
+            <p>011 15-5632-4892</p>
+          </section>
         </div>
         <div class="contac-logos">
           <a href="#"
