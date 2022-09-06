@@ -209,10 +209,11 @@ header {
 }
 .menu-ul{
   display: none;
-}
-.menu-ul label{
   font-size: 40px;
   cursor: pointer;
+}
+.nav input{
+  display: none;
 }
 .contacto h1{
   font-size: 50px;
